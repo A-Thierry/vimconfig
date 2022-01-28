@@ -1,9 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	Encoding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-scriptencoding utf-8
 set encoding=utf-8
-set fileencoding=utf-8
+scriptencoding utf-8
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	Vi compatibility
@@ -15,6 +14,7 @@ set nocompatible
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on 
 colorscheme peachpuff
+set background=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	Line Numbering
@@ -43,6 +43,7 @@ set incsearch
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set listchars=tab:←−→,eol:↲
 autocmd Filetype c setlocal list
+autocmd Filetype h setlocal list
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	Tabs by Filetype
@@ -50,7 +51,7 @@ autocmd Filetype c setlocal list
 set ts=4 sw=4 sts=4 noexpandtab
 autocmd Filetype perl setlocal ts=2 sw=2 sts=2 noexpandtab
 autocmd Filetype css setlocal ts=4 sw= 4 sts=4 expandtab
-
+autocmd Filetype h setlocal syntax=c
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	Folding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -86,3 +87,9 @@ highlight colorcolumn guibg=red
 "	Scroll Offset
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set scrolloff=10
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"	No Bars on Split
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set fillchars+=vert:\ 
+highlight VertSplit cterm=None
