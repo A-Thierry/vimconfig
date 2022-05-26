@@ -13,8 +13,9 @@ set nocompatible
 "	Colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on 
-colorscheme peachpuff
+colorscheme torte
 set background=dark
+hi Normal ctermfg=white ctermbg=black
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	Line Numbering
@@ -92,4 +93,4 @@ set scrolloff=10
 "	No Bars on Split
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set fillchars+=vert:\ 
-highlight VertSplit cterm=None
+highlight VertSplit ctermbg=black
